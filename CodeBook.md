@@ -1,7 +1,7 @@
 # Code Book for Tidy Dataset created from UCI HAR Dataset
 
 ## Subject
-The subject is represented in the dataset as the integer ID of subjects
+The subject is represented in the dataset as the integer ID of subjects.
 ## Activity
 The activities included in the dataset are represented by following strings:
 
