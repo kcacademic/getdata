@@ -37,3 +37,6 @@ To achieve the objective mentioned above an R script was prepared (run_analysis.
 * Inspect the generated text file data_tidy.txt in the working directory
 * You can load the generated text file in the working directory using,
 	read.table("./data_tidy.txt", header=TRUE)
+
+## Code Book
+The Code Book for the tidy data set created as part of the steps above is provided by the name of CodeBook.md which explains all variables of the data set in detail.
