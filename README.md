@@ -19,7 +19,7 @@ To achieve the objective mentioned above an R script was prepared (run_analysis.
 * Creates more meaningful names of the feature by substituting acronym like 't', 'f' with their intended meaning like "Time" & "Frequency" respectively. Similarly replacing the function names "mean()" and "std()" with their intended behaviour like "Mean" & "StdDev" respectively. Finally removing all '-'. This gives the format of feature name as,
 	{Time|Frequency}{Body|Gravity}{Acc|AccJerk|Gyro|GyroJerk}{Mean|StdDev}{X|Y|Z|Mag}
 * Creates the integer vector of subjects form the data frame sub_merged.
-* Replaces the activity ID in dataset y_merged with the descriptive activity names as provided by data loaded from activity_lables.txt. Finally replacing all '-' with blank space. This gives a character vector activities.
+* Replaces the activity ID in dataset y_merged with the descriptive activity names as provided by data loaded from activity_lables.txt. Activity labels are processed replacing all '-' with blank space and converting all strings to lower case. This gives a character vector activities.
 * Merging the dataset x_subset with vectors subjects and activities with suitable column names. This gives the data frame data_final.
 * Creating an independent data frame from the final data frame data_final. This step use the group_by(), summarise_each() functional and chain operator from dplyr package. The dplyr package has been loaded at the top of the script and assumes this package has been installed. This step produces a data frame data_tidy.
 * Finally writing the data frame data_tidy to the text file data_tidy.txt at the working directly using the write.table function with row.name set to False. This file is also read back using read.table to ensure sanity.

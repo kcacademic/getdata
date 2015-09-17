@@ -5,12 +5,12 @@ The subject is represented in the dataset as the integer ID of subjects.
 ## Activity
 The activities included in the dataset are represented by following strings:
 
- * LAYING
- * SITTING
- * STANDING
- * WALKING
- * WALKING DOWNSTAIRS
- * WALKING UPSTAIRS
+ * laying
+ * sitting
+ * standing
+ * walking
+ * walking downstairs
+ * walking upstairs
 
 ## Mean of Measurements in Time Domain
 The following variables are mean of measurements in time domain for each activity and subject. All values are represented as floating point numbers.

@@ -39,6 +39,8 @@ run_analysis <- function() {
 	
 	# The steps below substitute the activity identifier with their descriptive names in
 	# the data frame y_merged using the data frame activity_labels.
+	activity_labels[,2] <- tolower(activity_labels[,2])
+	activity_labels[,2] <- gsub("_", " ", activity_labels[,2])
 	activities <- activity_labels[,2][y_merged[, 1]]
 	activities <- gsub("_", " ", activities)
   
